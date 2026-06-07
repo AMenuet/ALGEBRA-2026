@@ -100,6 +100,6 @@ Archivo incluido en la app:
 Corrección de navegación: la barra principal ahora muestra correctamente las 5 secciones, incluida **Geometría Analítica**.
 
 
-## V6 · Arquitectura modular
+## V6.1 · Contenido inicial de Geometría Analítica
 
-Se reestructuró la app en módulos: Vectores, Geometría Analítica, Cónicas, Coordenadas Polares, Paramétricas y Material PDF. Cada módulo queda preparado para teoría, actividades, autoevaluación y PDF.
+Se agregó contenido real a las subsecciones de Geometría Analítica, manteniendo la estructura Teoría · Actividades · Autoevaluación · PDF.

@@ -725,7 +725,7 @@ footer {
   }
 }
 
-/* V6: arquitectura modular */
+/* V6.1: arquitectura modular y contenido Geometría Analítica */
 .module-tabs { grid-template-columns: repeat(6, minmax(170px, 1fr)) !important; }
 .module-subtabs { display:flex; flex-wrap:wrap; gap:.55rem; padding:.65rem; margin:1rem 0; background:white; border:1px solid var(--line); border-radius:20px; }
 .module-subtab { border:0; border-radius:14px; background:#eef5ff; color:var(--blue); padding:.65rem .85rem; font-weight:800; cursor:pointer; }
@@ -736,4 +736,9 @@ footer {
 .mini-module-card,.placeholder-box { background:white; border:1px solid var(--line); border-radius:18px; padding:1rem; box-shadow:0 8px 18px rgba(8,59,122,.05); }
 .mini-module-card h4 { margin:0 0 .45rem; color:var(--blue); }
 .mini-module-card p,.placeholder-box { color:var(--muted); line-height:1.45; }
+.section-header.compact { margin-top:.5rem; margin-bottom:.75rem; }
+.ga-inner-tabs { margin-top:.5rem; }
+.ga-svg { width:100%; max-width:900px; display:block; margin:.5rem auto 0; border:1px solid var(--line); border-radius:18px; background:white; }
+.ga-svg .svg-label { font-family:"Cambria Math", Georgia, serif; font-weight:800; font-size:24px; }
+.ga-svg .svg-small { font-family:"Cambria Math", Georgia, serif; font-size:18px; }
 @media (max-width:900px){ .module-tabs{grid-template-columns:repeat(6,minmax(190px,1fr)) !important;} .three-block-layout{grid-template-columns:1fr;} }
