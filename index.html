@@ -6,7 +6,7 @@
   <title>VectorLab · Unidad 1: Vectores</title>
   <meta name="description" content="Manual interactivo de vectores para Álgebra y Geometría Analítica." />
   <meta name="author" content="Ing. Mg. Agustín Menuet · FICA · Universidad Nacional de San Luis" />
-  <link rel="stylesheet" href="styles.css?v=6.1" />
+  <link rel="stylesheet" href="styles.css?v=6.2" />
 </head>
 <body>
   <header class="hero">
@@ -17,8 +17,8 @@
     </div>
     <div class="status-card">
       <span>Versión</span>
-      <strong>V6.1 · Geometría Analítica</strong>
-      <small>Geometría Analítica con contenido</small>
+      <strong>V6.2 · Geometría Analítica</strong>
+      <small>Etapa 1 · Distancia y segmentos</small>
     </div>
   </header>
 
@@ -1251,101 +1251,67 @@
         <button class="module-subtab" data-module-panel="ga-pdf">Material PDF</button>
       </nav>
 
+      
       <article id="ga-sub1" class="module-panel active">
         <div class="section-header compact">
-          <div>
-            <h3>Distancia dirigida, distancia entre puntos y división de segmentos</h3>
-            <p>Del eje coordenado al plano cartesiano.</p>
-          </div>
-          <span class="badge">Teoría · actividades · autoevaluación</span>
+          <div><h3>Distancia dirigida, distancia entre puntos y división de segmentos</h3><p>Primer bloque completo de Geometría Analítica, basado en el material de clase.</p></div>
+          <span class="badge">Teoría ampliada · 8 actividades · 8 preguntas</span>
         </div>
-
         <nav class="inner-tabs ga-inner-tabs">
           <button class="inner-tab active" data-panel="ga1-theory">Teoría</button>
+          <button class="inner-tab" data-panel="ga1-visual">Visualización</button>
           <button class="inner-tab" data-panel="ga1-activities">Actividades</button>
           <button class="inner-tab" data-panel="ga1-quiz">Autoevaluación</button>
-          <button class="inner-tab" data-panel="ga1-pdf">PDF</button>
         </nav>
-
-        <section id="ga1-theory" class="panel active">
-          <div class="theory-grid">
-            <div class="theory-card">
-              <h3>Distancia dirigida</h3>
-              <p>En un eje coordenado, el segmento dirigido de \(P_1\) a \(P_2\) conserva signo.</p>
-              <div class="formula">P₁P₂ = x₂ − x₁</div>
-              <p>Al invertir el sentido, cambia el signo: \(P₂P₁=x₁-x₂\).</p>
-            </div>
-            <div class="theory-card">
-              <h3>Distancia entre dos puntos</h3>
-              <p>En el plano, para \(P_1(x_1,y_1)\) y \(P_2(x_2,y_2)\):</p>
-              <div class="formula">d(P₁,P₂)=√((x₂−x₁)²+(y₂−y₁)²)</div>
-            </div>
-            <div class="theory-card">
-              <h3>Punto medio</h3>
-              <p>El punto medio \(M\) de un segmento es:</p>
-              <div class="formula">M=((x₁+x₂)/2,(y₁+y₂)/2)</div>
-            </div>
-            <div class="theory-card">
-              <h3>División de un segmento</h3>
-              <p>Si \(P\) divide a \(P_1P_2\) en razón \(r=P_1P/PP_2\):</p>
-              <div class="formula">P=((x₁+r x₂)/(1+r),(y₁+r y₂)/(1+r))</div>
-            </div>
-          </div>
-
-          <div class="graph-card">
-            <div class="graph-header">
-              <div>
-                <h4>Interpretación gráfica</h4>
-                <p>La distancia surge de las variaciones horizontal y vertical.</p>
-              </div>
-            </div>
-            <svg class="ga-svg" viewBox="0 0 720 360" role="img" aria-label="Distancia entre dos puntos">
-              <defs>
-                <marker id="gaArrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
-                  <path d="M0,0 L0,6 L7,3 z" fill="#0b5cad"></path>
-                </marker>
-              </defs>
-              <rect width="720" height="360" fill="#fbfdff"/>
-              <g stroke="#e5eef9" stroke-width="1">
-                <path d="M60 300H660M60 260H660M60 220H660M60 180H660M60 140H660M60 100H660M60 60H660"/>
-                <path d="M100 40V320M140 40V320M180 40V320M220 40V320M260 40V320M300 40V320M340 40V320M380 40V320M420 40V320M460 40V320M500 40V320M540 40V320M580 40V320M620 40V320"/>
-              </g>
-              <line x1="60" y1="300" x2="670" y2="300" stroke="#111" stroke-width="2" marker-end="url(#gaArrow)"/>
-              <line x1="100" y1="320" x2="100" y2="40" stroke="#111" stroke-width="2" marker-end="url(#gaArrow)"/>
-              <circle cx="180" cy="260" r="6" fill="#0b5cad"/>
-              <circle cx="500" cy="100" r="6" fill="#0b5cad"/>
-              <line x1="180" y1="260" x2="500" y2="260" stroke="#b45309" stroke-width="3" stroke-dasharray="8 6"/>
-              <line x1="500" y1="260" x2="500" y2="100" stroke="#b45309" stroke-width="3" stroke-dasharray="8 6"/>
-              <line x1="180" y1="260" x2="500" y2="100" stroke="#0b5cad" stroke-width="4"/>
-              <text x="160" y="285" class="svg-small">P₁(x₁,y₁)</text>
-              <text x="510" y="92" class="svg-small">P₂(x₂,y₂)</text>
-              <text x="310" y="250" class="svg-small">Δx</text>
-              <text x="510" y="190" class="svg-small">Δy</text>
-              <text x="330" y="160" class="svg-label" fill="#0b5cad">d</text>
+        <section id="ga1-theory" class="panel active"><div class="theory-grid"><div class="theory-card"><h3>1. Sistema coordenado lineal</h3><p>Un sistema coordenado lineal permite ubicar puntos sobre una recta mediante números reales. Cada punto queda asociado a una coordenada y cada coordenada determina un punto. Si los puntos son P₁ y P₂, con coordenadas x₁ y x₂, se puede estudiar tanto la distancia usual entre ellos como la longitud dirigida del segmento.</p></div><div class="theory-card"><h3>2. Distancia usual entre dos puntos de una recta</h3><p>La distancia usual no considera sentido. Por eso siempre es un número no negativo. Esta distancia mide la separación entre los puntos, independientemente de cuál se tome primero.</p><div class="formula">d = |P₁P₂| = |x₂ − x₁| = |x₁ − x₂|</div></div><div class="theory-card"><h3>3. Longitud dirigida</h3><p>La longitud dirigida sí considera el sentido del recorrido. Si P₁ es el punto inicial y P₂ el punto final, entonces P₁P₂ = x₂ − x₁. Si se invierte el sentido, cambia el signo.</p><div class="formula">P₁P₂ = x₂ − x₁    ;    P₂P₁ = x₁ − x₂</div></div><div class="theory-card"><h3>4. Relación distancia-longitud dirigida</h3><p>La distancia usual es el valor absoluto de la longitud dirigida. Además, se cumple que al invertir el sentido cambia el signo.</p><div class="formula">d = |P₁P₂|    ;    P₁P₂ = −P₂P₁</div></div><div class="theory-card"><h3>5. Distancia entre dos puntos en el plano</h3><p>Sean P₁(x₁,y₁) y P₂(x₂,y₂) dos puntos del plano. La diferencia horizontal es Δx = x₂ − x₁ y la diferencia vertical es Δy = y₂ − y₁.</p><div class="formula">d(P₁,P₂) = √((x₂ − x₁)² + (y₂ − y₁)²)</div></div><div class="theory-card"><h3>6. Interpretación geométrica</h3><p>La distancia entre dos puntos del plano puede interpretarse como la hipotenusa de un triángulo rectángulo cuyos catetos son |Δx| y |Δy|. Esta interpretación conecta el registro algebraico con el gráfico.</p></div><div class="theory-card"><h3>7. División de un segmento en una razón dada</h3><p>Si P pertenece a la recta determinada por P₁ y P₂, se define la razón r = P₁P / PP₂. Si P está entre P₁ y P₂, entonces r ≥ 0. Si P está fuera del segmento, la razón puede tomar valores negativos.</p><div class="formula">r = P₁P / PP₂</div></div><div class="theory-card"><h3>8. Coordenadas del punto que divide al segmento</h3><p>Si P₁(x₁,y₁), P₂(x₂,y₂) y r = P₁P / PP₂, entonces las coordenadas de P se calculan con las fórmulas de división de segmento. Son válidas para r ≠ −1.</p><div class="formula">x = (x₁ + r x₂)/(1 + r)    ;    y = (y₁ + r y₂)/(1 + r)</div></div><div class="theory-card"><h3>9. Punto medio</h3><p>El punto medio es el caso particular en que P divide al segmento en razón r = 1. Es decir, P₁P = PP₂.</p><div class="formula">M = ((x₁+x₂)/2 , (y₁+y₂)/2)</div></div><div class="theory-card"><h3>10. Distancia en el espacio</h3><p>Para puntos P₁(x₁,y₁,z₁) y P₂(x₂,y₂,z₂), la distancia se generaliza sumando también la variación en z.</p><div class="formula">d(P₁,P₂) = √((x₂−x₁)² + (y₂−y₁)² + (z₂−z₁)²)</div></div><div class="theory-card"><h3>11. Errores frecuentes</h3><p>Confundir distancia con longitud dirigida; olvidar el valor absoluto en la distancia sobre una recta; usar punto medio cuando corresponde división en otra razón; olvidar que r = 1 corresponde al punto medio.</p></div><div class="theory-card"><h3>12. Aplicaciones</h3><p>Estos conceptos permiten calcular longitudes de lados de figuras, perímetros, áreas de triángulos, coordenadas de puntos medios, trisecciones y posiciones relativas en problemas de ingeniería y representación gráfica.</p></div></div></section>
+        <section id="ga1-visual" class="panel">
+          <div class="section-note"><h3>Visualización conceptual</h3><p>La distancia entre dos puntos del plano se obtiene a partir de Δx y Δy.</p></div>
+          <div class="graph-card"><div class="graph-header"><div><h4>Distancia entre P₁(x₁,y₁) y P₂(x₂,y₂)</h4><p>La distancia es la hipotenusa del triángulo rectángulo formado por Δx y Δy.</p></div><div class="live-values"><span>Δx = x₂ − x₁</span><span>Δy = y₂ − y₁</span><span>d = √(Δx² + Δy²)</span></div></div>
+            <svg class="ga-svg" viewBox="0 0 720 380" role="img" aria-label="Distancia entre dos puntos">
+              <defs><marker id="gaArrowV62" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#0b5cad"></path></marker></defs>
+              <rect width="720" height="380" fill="#fbfdff"/>
+              <g stroke="#e5eef9" stroke-width="1"><path d="M60 320H660M60 280H660M60 240H660M60 200H660M60 160H660M60 120H660M60 80H660M60 40H660"/><path d="M100 40V340M140 40V340M180 40V340M220 40V340M260 40V340M300 40V340M340 40V340M380 40V340M420 40V340M460 40V340M500 40V340M540 40V340M580 40V340M620 40V340"/></g>
+              <line x1="60" y1="320" x2="670" y2="320" stroke="#111" stroke-width="2" marker-end="url(#gaArrowV62)"/><line x1="100" y1="340" x2="100" y2="35" stroke="#111" stroke-width="2" marker-end="url(#gaArrowV62)"/>
+              <circle cx="180" cy="280" r="7" fill="#0b5cad"/><circle cx="520" cy="120" r="7" fill="#0b5cad"/>
+              <line x1="180" y1="280" x2="520" y2="280" stroke="#b45309" stroke-width="4" stroke-dasharray="8 6"/><line x1="520" y1="280" x2="520" y2="120" stroke="#b45309" stroke-width="4" stroke-dasharray="8 6"/><line x1="180" y1="280" x2="520" y2="120" stroke="#0b5cad" stroke-width="5"/>
+              <text x="150" y="306" class="svg-small">P₁(x₁,y₁)</text><text x="530" y="112" class="svg-small">P₂(x₂,y₂)</text><text x="335" y="270" class="svg-small">Δx</text><text x="532" y="205" class="svg-small">Δy</text><text x="340" y="175" class="svg-label" fill="#0b5cad">d</text>
             </svg>
           </div>
         </section>
-
-        <section id="ga1-activities" class="panel">
-          <div class="section-note"><h3>Actividades guiadas</h3><p>Resolver en carpeta y verificar respuestas puntuales.</p></div>
-          <div class="activity-list">
-            <div class="activity-card" data-answer="7"><h4>Actividad 1 · Longitud dirigida</h4><p>Dados \(P_1=-2\) y \(P_2=5\), calculá \(P_1P_2\).</p><input type="text" placeholder="Ingresá un número"><div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div><p class="feedback"></p><div class="solution">P₁P₂=x₂−x₁=5−(−2)=7.</div></div>
-            <div class="activity-card" data-answer="-7"><h4>Actividad 2 · Cambio de sentido</h4><p>Con los mismos puntos, calculá \(P_2P_1\).</p><input type="text" placeholder="Ingresá un número"><div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div><p class="feedback"></p><div class="solution">P₂P₁=x₁−x₂=−2−5=−7.</div></div>
-            <div class="activity-card" data-answer="5"><h4>Actividad 3 · Distancia en el plano</h4><p>Calculá la distancia entre \(P_1(-1,2)\) y \(P_2(2,6)\).</p><input type="text" placeholder="Ingresá un número"><div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div><p class="feedback"></p><div class="solution">d=√((2+1)²+(6−2)²)=√(3²+4²)=5.</div></div>
-            <div class="activity-card" data-answer="1,2|(1,2)"><h4>Actividad 4 · Punto medio</h4><p>Hallá el punto medio entre \(P_1(-2,5)\) y \(P_2(4,-1)\).</p><input type="text" placeholder="Ejemplo: (a,b)"><div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div><p class="feedback"></p><div class="solution">M=((-2+4)/2,(5−1)/2)=(1,2).</div></div>
-          </div>
-        </section>
-
-        <section id="ga1-quiz" class="panel">
-          <div class="quiz-grid">
-            <div class="quiz-card" data-correct="1"><h4>1. La distancia entre dos puntos siempre es:</h4><button>Negativa</button><button>No negativa</button><button>Dirigida</button><p class="quiz-feedback"></p></div>
-            <div class="quiz-card" data-correct="2"><h4>2. El punto medio se obtiene:</h4><button>Restando coordenadas</button><button>Multiplicando coordenadas</button><button>Promediando coordenadas</button><p class="quiz-feedback"></p></div>
-            <div class="quiz-card" data-correct="0"><h4>3. En una longitud dirigida, cambiar el sentido:</h4><button>Cambia el signo</button><button>No cambia nada</button><button>Elimina la distancia</button><p class="quiz-feedback"></p></div>
-            <div class="quiz-card" data-correct="1"><h4>4. La fórmula de distancia en el plano se basa en:</h4><button>Regla de Cramer</button><button>Teorema de Pitágoras</button><button>Producto mixto</button><p class="quiz-feedback"></p></div>
-          </div>
-        </section>
-
-        <section id="ga1-pdf" class="panel"><div class="section-note"><h3>Material PDF</h3><p>Consultar la guía práctica inicial de Geometría Analítica en el PDF completo.</p><div class="pdf-actions"><a href="geometria_analitica_unidad_2_final.pdf" target="_blank" rel="noopener">Abrir PDF</a><a href="geometria_analitica_unidad_2_final.pdf" download>Descargar PDF</a></div></div></section>
+        <section id="ga1-activities" class="panel"><div class="section-note"><h3>Actividades guiadas</h3><p>Actividades adaptadas de la guía práctica.</p></div><div class="activity-list">
+<div class="activity-card" data-answer="-7" data-hint="Usá P₁P₂ = x₂ − x₁.">
+<h4>Actividad 1 · Longitud dirigida</h4><p>Dados P₁=5 y P₂=−2, calcular la longitud dirigida P₁P₂.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">P₁P₂ = x₂ − x₁ = −2 − 5 = −7.</div></div>
+<div class="activity-card" data-answer="7" data-hint="Invertir el sentido cambia el signo.">
+<h4>Actividad 2 · Sentido contrario</h4><p>Con P₁=5 y P₂=−2, calcular P₂P₁.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">P₂P₁ = x₁ − x₂ = 5 − (−2) = 7.</div></div>
+<div class="activity-card" data-answer="7|-11" data-hint="Planteá |x−(−2)|=9.">
+<h4>Actividad 3 · Distancia en la recta</h4><p>La distancia entre dos puntos de una recta es 9. Si uno de ellos es −2, indicar un posible valor del otro punto.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">|x+2|=9. Entonces x=7 o x=−11.</div></div>
+<div class="activity-card" data-answer="14" data-hint="Si M es punto medio, entonces M=(x₁+x₂)/2.">
+<h4>Actividad 4 · Punto medio en la recta</h4><p>Un extremo de un segmento dirigido es −8 y su punto medio es 3. Hallar la coordenada del otro extremo.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">3 = (−8 + x)/2. Entonces 6 = −8 + x, por lo tanto x = 14.</div></div>
+<div class="activity-card" data-answer="5" data-hint="Calculá la diferencia horizontal y vertical entre los puntos.">
+<h4>Actividad 5 · Distancia horizontal</h4><p>Calcular la distancia entre A(−1,2) y B(4,2).</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">d = √((4−(−1))² + (2−2)²) = 5.</div></div>
+<div class="activity-card" data-answer="5" data-hint="Es un triángulo rectángulo de catetos 3 y 4.">
+<h4>Actividad 6 · Distancia diagonal</h4><p>Calcular la distancia entre A(−1,2) y B(2,6).</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">d = √((2+1)² + (6−2)²) = √(3²+4²) = 5.</div></div>
+<div class="activity-card" data-answer="(0,4)|0,4" data-hint="Promediá las coordenadas de ambos extremos.">
+<h4>Actividad 7 · Punto medio en el plano</h4><p>Hallar el punto medio del segmento con extremos P₁(−4,2) y P₂(4,6).</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">M = ((−4+4)/2 , (2+6)/2) = (0,4).</div></div>
+<div class="activity-card" data-answer="(8,8)|8,8" data-hint="Usá x=(x₁+r x₂)/(1+r), y=(y₁+r y₂)/(1+r).">
+<h4>Actividad 8 · División en razón negativa</h4><p>Si P₁(−4,2), P₂(4,6) y r = −3, hallar el punto P que divide al segmento dirigido en esa razón.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">x = (−4 + (−3)4)/(1−3)=8; y = (2 + (−3)6)/(1−3)=8. Por lo tanto P=(8,8).</div></div></div></section>
+        <section id="ga1-quiz" class="panel"><div class="quiz-grid"><div class="quiz-card" data-correct="1"><h4>1. La distancia usual entre dos puntos de una recta se calcula con:</h4><button>x₂ − x₁</button><button>|x₂ − x₁|</button><button>x₁ + x₂</button><button>x₁x₂</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="0"><h4>2. La longitud dirigida P₁P₂ puede ser negativa.</h4><button>Verdadero</button><button>Falso</button><button>Solo si x₁=0</button><button>Nunca</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="2"><h4>3. Si se invierte el sentido de un segmento dirigido:</h4><button>La distancia desaparece</button><button>La longitud se duplica</button><button>Cambia el signo</button><button>No cambia el signo</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="1"><h4>4. La fórmula de distancia entre dos puntos del plano se obtiene a partir de:</h4><button>Producto escalar</button><button>Teorema de Pitágoras</button><button>Regla de Cramer</button><button>Producto mixto</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="3"><h4>5. El punto medio de P₁(x₁,y₁) y P₂(x₂,y₂) es:</h4><button>(x₁−x₂,y₁−y₂)</button><button>(x₁+x₂,y₁+y₂)</button><button>(x₂−x₁,y₂−y₁)</button><button>((x₁+x₂)/2,(y₁+y₂)/2)</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="0"><h4>6. Si P está entre P₁ y P₂, la razón r = P₁P / PP₂ es:</h4><button>No negativa</button><button>Siempre negativa</button><button>Siempre −1</button><button>Imposible de calcular</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="2"><h4>7. El caso r = 1 corresponde a:</h4><button>Un punto exterior</button><button>Un extremo del segmento</button><button>El punto medio</button><button>Una recta paralela</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="1"><h4>8. La distancia entre puntos en el espacio incorpora:</h4><button>Solo x e y</button><button>Las variaciones en x, y, z</button><button>Solo la pendiente</button><button>Solo el producto vectorial</button><p class="quiz-feedback"></p></div></div></section>
       </article>
 
       <article id="ga-sub2" class="module-panel">
@@ -1448,6 +1414,6 @@
 
   <footer><span>VectorLab · V6.1 Geometría Analítica</span><span>Autor: Ing. Mg. Agustín Menuet · FICA · UNSL · 2026</span><span>© 2026 Agustín Menuet. Material educativo. Uso académico citando la fuente.</span></footer>
 
-  <script src="app.js?v=5.4.1"></script>
+  <script src="app.js?v=6.2"></script>
 </body>
 </html>

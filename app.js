@@ -862,11 +862,12 @@ function setupNavigation() {
 
   document.querySelectorAll(".inner-tab").forEach(btn => {
     btn.addEventListener("click", () => {
-      const section = btn.closest(".section");
-      section.querySelectorAll(".inner-tab").forEach(b => b.classList.remove("active"));
-      section.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
+      const scope = btn.closest(".module-panel") || btn.closest(".section");
+      scope.querySelectorAll(".inner-tab").forEach(b => b.classList.remove("active"));
+      scope.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
       btn.classList.add("active");
-      $(btn.dataset.panel).classList.add("active");
+      const target = document.getElementById(btn.dataset.panel);
+      if (target) target.classList.add("active");
       setTimeout(redrawAll, 60);
     });
   });
@@ -905,7 +906,7 @@ function setupActivities() {
     });
 
     card.querySelector(".hint-btn").addEventListener("click", () => {
-      feedback.textContent = "Pista: revisá la definición o aplicá la fórmula componente a componente.";
+      feedback.textContent = card.dataset.hint ? "Pista: " + card.dataset.hint : "Pista: revisá la definición o aplicá la fórmula componente a componente.";
       feedback.style.color = "var(--orange)";
     });
 

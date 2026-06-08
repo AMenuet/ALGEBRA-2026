@@ -742,3 +742,11 @@ footer {
 .ga-svg .svg-label { font-family:"Cambria Math", Georgia, serif; font-weight:800; font-size:24px; }
 .ga-svg .svg-small { font-family:"Cambria Math", Georgia, serif; font-size:18px; }
 @media (max-width:900px){ .module-tabs{grid-template-columns:repeat(6,minmax(190px,1fr)) !important;} .three-block-layout{grid-template-columns:1fr;} }
+
+/* V6.2: Geometría Analítica - Etapa 1 */
+.ga-inner-tabs { margin-top: .75rem; }
+.section-header.compact h3 { color: var(--blue); }
+.ga-svg { width: 100%; max-width: 920px; display: block; margin: .75rem auto 0; border: 1px solid var(--line); border-radius: 18px; background: white; }
+.ga-svg .svg-label { font-family: "Cambria Math", Georgia, serif; font-weight: 800; font-size: 24px; }
+.ga-svg .svg-small { font-family: "Cambria Math", Georgia, serif; font-size: 18px; }
+.theory-card ul { margin: .4rem 0 0 1.1rem; color: var(--muted); line-height: 1.5; }

@@ -103,3 +103,6 @@ Corrección de navegación: la barra principal ahora muestra correctamente las 5
 ## V6.1 · Contenido inicial de Geometría Analítica
 
 Se agregó contenido real a las subsecciones de Geometría Analítica, manteniendo la estructura Teoría · Actividades · Autoevaluación · PDF.
+
+## V6.2 · Geometría Analítica · Etapa 1
+Se completó la subsección Distancia y segmentos: teoría ampliada, visualización, 8 actividades y 8 preguntas de autoevaluación.
