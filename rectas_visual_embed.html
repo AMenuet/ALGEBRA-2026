@@ -12,12 +12,12 @@
   .intro{background:white;border:1px solid var(--line);border-radius:18px;padding:14px 16px;margin-bottom:12px}
   .intro h3{margin:0 0 6px;color:var(--blue2)}
   .intro p{margin:0;color:var(--muted);line-height:1.45}
-  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-  .card{background:white;border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:0 8px 18px rgba(8,59,122,.06)}
+  .grid{display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));gap:12px}
+  .card{background:white;border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:0 8px 18px rgba(8,59,122,.06)}
   .card h4{margin:0 0 4px;color:var(--blue2);font-size:17px}
   .card p{margin:0 0 8px;color:var(--muted);font-size:13px}
   svg{width:100%;height:auto;display:block;border:1px solid #e5eef9;border-radius:14px;background:white}
-  .formula{background:var(--soft);border-left:5px solid var(--blue);border-radius:12px;padding:9px;margin-top:8px;text-align:center;font-family:"Cambria Math",Georgia,serif;font-size:22px;color:#111827}
+  .formula{background:var(--soft);border-left:5px solid var(--blue);border-radius:12px;padding:9px;margin-top:8px;text-align:center;font-family:"Cambria Math",Georgia,serif;font-size:20px;color:#111827}
   .controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:8px}
   .control{font-size:12px;color:var(--blue2);font-weight:700}
   .control label{display:flex;justify-content:space-between;gap:6px}
@@ -33,7 +33,7 @@
   .red{stroke:var(--red);fill:var(--red)}
   text{font-family:"Cambria Math",Georgia,serif;font-size:15px;fill:#111827}
   .label{font-weight:700;font-size:17px}
-  @media(max-width:850px){.grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr 1fr}}
+  @media(max-width:1350px){.grid{grid-template-columns:repeat(3,minmax(190px,1fr))}} @media(max-width:850px){.grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -159,8 +159,13 @@
   function val(card, name){ return Number(card.querySelector(`[data-var="${name}"]`)?.value || 0); }
   function fmt(n){ const r = Math.round(n*100)/100; return Number.isInteger(r) ? String(r) : r.toFixed(1); }
   function P(x,y){
-    const w = W - 2*view.pad, h = H - 2*view.pad;
-    return { x:view.pad+(x-view.xmin)/(view.xmax-view.xmin)*w, y:view.pad+(view.ymax-y)/(view.ymax-view.ymin)*h };
+    const s = Math.min(W - 2*view.pad, H - 2*view.pad);
+    const ox = (W - s) / 2;
+    const oy = (H - s) / 2;
+    return {
+      x: ox + (x-view.xmin)/(view.xmax-view.xmin)*s,
+      y: oy + (view.ymax-y)/(view.ymax-view.ymin)*s
+    };
   }
   function lineEl(x1,y1,x2,y2, cls="line", dash=false){
     const el = document.createElementNS("http://www.w3.org/2000/svg","line");

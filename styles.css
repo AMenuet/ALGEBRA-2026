@@ -766,3 +766,21 @@ footer {
     min-height: 4050px;
   }
 }
+
+
+/* V6.4.1: grillas cuadradas y visualización de rectas consolidada */
+.rectas-visual-frame {
+  min-height: 1380px;
+}
+
+@media (max-width: 1350px) {
+  .rectas-visual-frame {
+    min-height: 2050px;
+  }
+}
+
+@media (max-width: 900px) {
+  .rectas-visual-frame {
+    min-height: 4050px;
+  }
+}

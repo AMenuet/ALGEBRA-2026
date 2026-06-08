@@ -127,3 +127,10 @@ Se reemplazó la visualización simple de la subsección Rectas en el plano por 
 8. vector normal;
 9. recta vertical;
 10. recta horizontal.
+
+## V6.4.1 · Rectas · grillas cuadradas
+
+Se ajustó la visualización de Rectas en el plano:
+- grillas con escala x/y igual;
+- tarjetas en formato tablero amplio;
+- visualización consolidada antes de avanzar a Distancias y ángulos.
