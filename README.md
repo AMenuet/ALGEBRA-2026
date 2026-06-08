@@ -106,3 +106,10 @@ Se agregó contenido real a las subsecciones de Geometría Analítica, mantenien
 
 ## V6.2 · Geometría Analítica · Etapa 1
 Se completó la subsección Distancia y segmentos: teoría ampliada, visualización, 8 actividades y 8 preguntas de autoevaluación.
+
+## V6.3 · Geometría Analítica · Etapa 2
+Se completó la subsección **Rectas en el plano**:
+- teoría ampliada;
+- pestaña independiente de visualización;
+- 8 actividades con pistas y resolución;
+- 8 preguntas de autoevaluación.

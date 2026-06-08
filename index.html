@@ -6,7 +6,7 @@
   <title>VectorLab · Unidad 1: Vectores</title>
   <meta name="description" content="Manual interactivo de vectores para Álgebra y Geometría Analítica." />
   <meta name="author" content="Ing. Mg. Agustín Menuet · FICA · Universidad Nacional de San Luis" />
-  <link rel="stylesheet" href="styles.css?v=6.2" />
+  <link rel="stylesheet" href="styles.css?v=6.3" />
 </head>
 <body>
   <header class="hero">
@@ -17,8 +17,8 @@
     </div>
     <div class="status-card">
       <span>Versión</span>
-      <strong>V6.2 · Geometría Analítica</strong>
-      <small>Etapa 1 · Distancia y segmentos</small>
+      <strong>V6.3 · Geometría Analítica</strong>
+      <small>Etapa 2 · Rectas en el plano</small>
     </div>
   </header>
 
@@ -1314,21 +1314,117 @@
         <section id="ga1-quiz" class="panel"><div class="quiz-grid"><div class="quiz-card" data-correct="1"><h4>1. La distancia usual entre dos puntos de una recta se calcula con:</h4><button>x₂ − x₁</button><button>|x₂ − x₁|</button><button>x₁ + x₂</button><button>x₁x₂</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="0"><h4>2. La longitud dirigida P₁P₂ puede ser negativa.</h4><button>Verdadero</button><button>Falso</button><button>Solo si x₁=0</button><button>Nunca</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="2"><h4>3. Si se invierte el sentido de un segmento dirigido:</h4><button>La distancia desaparece</button><button>La longitud se duplica</button><button>Cambia el signo</button><button>No cambia el signo</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="1"><h4>4. La fórmula de distancia entre dos puntos del plano se obtiene a partir de:</h4><button>Producto escalar</button><button>Teorema de Pitágoras</button><button>Regla de Cramer</button><button>Producto mixto</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="3"><h4>5. El punto medio de P₁(x₁,y₁) y P₂(x₂,y₂) es:</h4><button>(x₁−x₂,y₁−y₂)</button><button>(x₁+x₂,y₁+y₂)</button><button>(x₂−x₁,y₂−y₁)</button><button>((x₁+x₂)/2,(y₁+y₂)/2)</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="0"><h4>6. Si P está entre P₁ y P₂, la razón r = P₁P / PP₂ es:</h4><button>No negativa</button><button>Siempre negativa</button><button>Siempre −1</button><button>Imposible de calcular</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="2"><h4>7. El caso r = 1 corresponde a:</h4><button>Un punto exterior</button><button>Un extremo del segmento</button><button>El punto medio</button><button>Una recta paralela</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="1"><h4>8. La distancia entre puntos en el espacio incorpora:</h4><button>Solo x e y</button><button>Las variaciones en x, y, z</button><button>Solo la pendiente</button><button>Solo el producto vectorial</button><p class="quiz-feedback"></p></div></div></section>
       </article>
 
+      
       <article id="ga-sub2" class="module-panel">
-        <div class="section-header compact"><div><h3>Rectas en el plano</h3><p>Distintas formas de representar una misma recta.</p></div><span class="badge">Rectas</span></div>
-        <nav class="inner-tabs ga-inner-tabs"><button class="inner-tab active" data-panel="ga2-theory">Teoría</button><button class="inner-tab" data-panel="ga2-activities">Actividades</button><button class="inner-tab" data-panel="ga2-quiz">Autoevaluación</button><button class="inner-tab" data-panel="ga2-pdf">PDF</button></nav>
-        <section id="ga2-theory" class="panel active"><div class="theory-grid">
-          <div class="theory-card"><h3>Forma punto-pendiente</h3><p>Si pasa por \(P_0(x_0,y_0)\) y tiene pendiente \(m\):</p><div class="formula">y−y₀=m(x−x₀)</div></div>
-          <div class="theory-card"><h3>Forma pendiente-ordenada</h3><p>Si \(m\) es la pendiente y \(b\) la ordenada al origen:</p><div class="formula">y=mx+b</div></div>
-          <div class="theory-card"><h3>Forma general</h3><p>Toda recta puede escribirse como:</p><div class="formula">Ax+By+C=0</div><p>Un vector normal es n=(A,B).</p></div>
-          <div class="theory-card"><h3>Forma vectorial</h3><p>Si pasa por X₀ y tiene vector director A:</p><div class="formula">X=X₀+tA</div></div>
-        </div></section>
-        <section id="ga2-activities" class="panel"><div class="activity-list">
-          <div class="activity-card" data-answer="y=2x-3|2x-3"><h4>Actividad 1 · Pendiente y ordenada</h4><p>Hallar la recta de pendiente m=2 y ordenada al origen b=-3.</p><input type="text" placeholder="Ejemplo: y=mx+b"><div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div><p class="feedback"></p><div class="solution">y=2x-3.</div></div>
-          <div class="activity-card" data-answer="(3,4)|(3, 4)|3,4"><h4>Actividad 2 · Vector director</h4><p>La recta pasa por P(1,2) y Q(4,6). ¿Cuál es un vector director?</p><input type="text" placeholder="Ejemplo: (a,b)"><div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div><p class="feedback"></p><div class="solution">A=Q−P=(3,4).</div></div>
-        </div></section>
-        <section id="ga2-quiz" class="panel"><div class="quiz-grid"><div class="quiz-card" data-correct="1"><h4>1. En Ax+By+C=0, un vector normal es:</h4><button>(B,A)</button><button>(A,B)</button><button>(-B,A)</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="0"><h4>2. La pendiente en y=mx+b es:</h4><button>m</button><button>b</button><button>x</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="2"><h4>3. La forma vectorial de una recta usa:</h4><button>Solo un punto</button><button>Solo una pendiente</button><button>Un punto y un vector director</button><p class="quiz-feedback"></p></div></div></section>
-        <section id="ga2-pdf" class="panel"><div class="section-note"><h3>Material PDF</h3><p>Consultar la guía de rectas en el plano en el PDF completo.</p><div class="pdf-actions"><a href="geometria_analitica_unidad_2_final.pdf" target="_blank" rel="noopener">Abrir PDF</a><a href="geometria_analitica_unidad_2_final.pdf" download>Descargar PDF</a></div></div></section>
+        <div class="section-header compact">
+          <div>
+            <h3>Rectas en el plano</h3>
+            <p>Formas equivalentes de la ecuación de una recta y su interpretación geométrica.</p>
+          </div>
+          <span class="badge">Teoría ampliada · 8 actividades · 8 preguntas</span>
+        </div>
+
+        <nav class="inner-tabs ga-inner-tabs">
+          <button class="inner-tab active" data-panel="ga2-theory">Teoría</button>
+          <button class="inner-tab" data-panel="ga2-visual">Visualización</button>
+          <button class="inner-tab" data-panel="ga2-activities">Actividades</button>
+          <button class="inner-tab" data-panel="ga2-quiz">Autoevaluación</button>
+        </nav>
+
+        <section id="ga2-theory" class="panel active">
+          <div class="theory-grid"><div class="theory-card"><h3>1. Concepto de recta en el plano</h3><p>Una recta puede interpretarse como el conjunto de puntos del plano que satisfacen una misma condición lineal. Desde el punto de vista analítico, una recta se representa mediante ecuaciones equivalentes que resaltan distintos aspectos geométricos.</p></div><div class="theory-card"><h3>2. Pendiente de una recta</h3><p>La pendiente mide la inclinación de una recta respecto del eje x. Si una recta pasa por P₁(x₁,y₁) y P₂(x₂,y₂), con x₂ distinto de x₁, entonces:</p><div class="formula">m = (y₂ − y₁)/(x₂ − x₁)</div></div><div class="theory-card"><h3>3. Interpretación de la pendiente</h3><p>La pendiente representa la razón entre la variación vertical y la variación horizontal. Si m es positiva, la recta crece; si m es negativa, la recta decrece; si m=0, la recta es horizontal.</p><div class="formula">m = Δy/Δx</div></div><div class="theory-card"><h3>4. Forma punto-pendiente</h3><p>Si se conoce un punto P₀(x₀,y₀) de la recta y su pendiente m, la ecuación puede escribirse como:</p><div class="formula">y − y₀ = m(x − x₀)</div></div><div class="theory-card"><h3>5. Forma pendiente-ordenada</h3><p>Si se conoce la pendiente m y la ordenada al origen b, se utiliza la forma explícita:</p><div class="formula">y = mx + b</div></div><div class="theory-card"><h3>6. Recta que pasa por dos puntos</h3><p>Cuando se conocen dos puntos P₁ y P₂, primero se calcula la pendiente y luego se escribe la ecuación usando forma punto-pendiente.</p><div class="formula">m = (y₂ − y₁)/(x₂ − x₁)</div></div><div class="theory-card"><h3>7. Forma general</h3><p>Toda recta del plano puede expresarse en la forma general. Esta forma es útil para trabajar distancias, paralelismo y perpendicularidad.</p><div class="formula">Ax + By + C = 0</div></div><div class="theory-card"><h3>8. Vector normal</h3><p>En la forma general Ax+By+C=0, el vector n=(A,B) es perpendicular a la recta. Este vector indica una dirección normal a todos los vectores directores de la recta.</p><div class="formula">n = (A,B)</div></div><div class="theory-card"><h3>9. Vector director</h3><p>Un vector director es un vector paralelo a la recta. Si la recta tiene normal n=(A,B), un posible vector director es:</p><div class="formula">v = (−B,A)</div></div><div class="theory-card"><h3>10. Forma segmentaria</h3><p>Si una recta corta al eje x en a y al eje y en b, con a y b no nulos, puede escribirse como:</p><div class="formula">x/a + y/b = 1</div></div><div class="theory-card"><h3>11. Forma normal</h3><p>Si d es la distancia del origen a la recta y α es el ángulo que forma la normal con el eje x, la forma normal es:</p><div class="formula">x cos(α) + y sin(α) − d = 0</div></div><div class="theory-card"><h3>12. Errores frecuentes</h3><p>Al trabajar rectas es común confundir pendiente con ordenada al origen, olvidar que las rectas verticales no tienen pendiente definida o no reconocer que distintas formas pueden representar la misma recta.</p></div></div>
+        </section>
+
+        <section id="ga2-visual" class="panel">
+          <div class="section-note">
+            <h3>Visualización conceptual</h3>
+            <p>La pendiente se interpreta como la razón entre la variación vertical y la variación horizontal.</p>
+          </div>
+
+          <div class="graph-card">
+            <div class="graph-header">
+              <div>
+                <h4>Recta por dos puntos</h4>
+                <p>La recta queda determinada por P₁ y P₂. La pendiente es m = Δy/Δx.</p>
+              </div>
+              <div class="live-values">
+                <span>Δx = x₂ − x₁</span>
+                <span>Δy = y₂ − y₁</span>
+                <span>m = Δy/Δx</span>
+              </div>
+            </div>
+
+            <svg class="ga-svg" viewBox="0 0 720 380" role="img" aria-label="Pendiente de una recta">
+              <defs>
+                <marker id="gaArrowV63" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L7,3 z" fill="#0b5cad"></path>
+                </marker>
+              </defs>
+              <rect width="720" height="380" fill="#fbfdff"/>
+              <g stroke="#e5eef9" stroke-width="1">
+                <path d="M60 320H660M60 280H660M60 240H660M60 200H660M60 160H660M60 120H660M60 80H660M60 40H660"/>
+                <path d="M100 40V340M140 40V340M180 40V340M220 40V340M260 40V340M300 40V340M340 40V340M380 40V340M420 40V340M460 40V340M500 40V340M540 40V340M580 40V340M620 40V340"/>
+              </g>
+              <line x1="60" y1="320" x2="670" y2="320" stroke="#111" stroke-width="2" marker-end="url(#gaArrowV63)"/>
+              <line x1="100" y1="340" x2="100" y2="35" stroke="#111" stroke-width="2" marker-end="url(#gaArrowV63)"/>
+
+              <line x1="135" y1="295" x2="620" y2="70" stroke="#0b5cad" stroke-width="5"/>
+              <circle cx="220" cy="255" r="7" fill="#0b5cad"/>
+              <circle cx="500" cy="125" r="7" fill="#0b5cad"/>
+              <line x1="220" y1="255" x2="500" y2="255" stroke="#b45309" stroke-width="4" stroke-dasharray="8 6"/>
+              <line x1="500" y1="255" x2="500" y2="125" stroke="#b45309" stroke-width="4" stroke-dasharray="8 6"/>
+              <text x="195" y="280" class="svg-small">P₁</text>
+              <text x="510" y="120" class="svg-small">P₂</text>
+              <text x="350" y="245" class="svg-small">Δx</text>
+              <text x="512" y="195" class="svg-small">Δy</text>
+              <text x="335" y="170" class="svg-label" fill="#0b5cad">m = Δy/Δx</text>
+            </svg>
+          </div>
+        </section>
+
+        <section id="ga2-activities" class="panel">
+          <div class="section-note">
+            <h3>Actividades guiadas</h3>
+            <p>Resolver en carpeta y usar la verificación para controlar el resultado final.</p>
+          </div>
+          <div class="activity-list">
+<div class="activity-card" data-answer="y=2x-3|2x-3" data-hint="Usá y=mx+b.">
+<h4>Actividad 1 · Pendiente y ordenada</h4><p>Hallar la ecuación de la recta de pendiente m=2 y ordenada al origen b=−3.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">y=2x−3.</div></div>
+<div class="activity-card" data-answer="3" data-hint="Usá m=(y₂−y₁)/(x₂−x₁).">
+<h4>Actividad 2 · Pendiente entre dos puntos</h4><p>Calcular la pendiente de la recta que pasa por P₁(1,2) y P₂(3,8).</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">m=(8−2)/(3−1)=6/2=3.</div></div>
+<div class="activity-card" data-answer="y-2=3(x-1)|y=3x-1|3x-y-1=0" data-hint="Usá la forma y−y₀=m(x−x₀).">
+<h4>Actividad 3 · Forma punto-pendiente</h4><p>Escribir la recta que pasa por P(1,2) y tiene pendiente m=3.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">y−2=3(x−1). Una forma equivalente es y=3x−1.</div></div>
+<div class="activity-card" data-answer="y=2x+1|2x-y+1=0" data-hint="Primero calculá la pendiente.">
+<h4>Actividad 4 · Recta por dos puntos</h4><p>Hallar la recta que pasa por A(0,1) y B(2,5).</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">m=(5−1)/(2−0)=2. Entonces y=2x+1.</div></div>
+<div class="activity-card" data-answer="(2,-1)|2,-1" data-hint="En Ax+By+C=0, el normal es (A,B).">
+<h4>Actividad 5 · Vector normal</h4><p>Indicar un vector normal a la recta 2x−y+4=0.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">n=(2,−1).</div></div>
+<div class="activity-card" data-answer="(1,2)|1,2" data-hint="Un director posible es (−B,A).">
+<h4>Actividad 6 · Vector director</h4><p>Indicar un vector director de la recta 2x−y+4=0.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">Como A=2 y B=−1, un director posible es (−B,A)=(1,2).</div></div>
+<div class="activity-card" data-answer="x/4+y/2=1|x/4 + y/2 = 1" data-hint="Usá la forma segmentaria x/a + y/b = 1.">
+<h4>Actividad 7 · Forma segmentaria</h4><p>Escribir la recta que corta al eje x en a=4 y al eje y en b=2.</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">x/4 + y/2 = 1.</div></div>
+<div class="activity-card" data-answer="x=3" data-hint="Una recta vertical tiene todos sus puntos con la misma coordenada x.">
+<h4>Actividad 8 · Recta vertical</h4><p>Escribir la ecuación de la recta vertical que pasa por P(3,−2).</p><input type="text" placeholder="Ingresá tu respuesta">
+<div class="buttons"><button class="check-btn">Verificar</button><button class="hint-btn">Pista</button><button class="solution-btn">Ver resolución</button></div>
+<p class="feedback"></p><div class="solution">La recta vertical es x=3.</div></div></div>
+        </section>
+
+        <section id="ga2-quiz" class="panel">
+          <div class="quiz-grid"><div class="quiz-card" data-correct="1"><h4>1. La pendiente representa:</h4><button>La ordenada al origen</button><button>La razón Δy/Δx</button><button>La distancia al origen</button><button>El área bajo la recta</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="0"><h4>2. La forma pendiente-ordenada es:</h4><button>y=mx+b</button><button>Ax+By+C=0</button><button>x/a+y/b=1</button><button>X=X₀+tA</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="2"><h4>3. En Ax+By+C=0, un vector normal es:</h4><button>(B,A)</button><button>(−B,A)</button><button>(A,B)</button><button>(C,A)</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="1"><h4>4. Un vector director de Ax+By+C=0 puede ser:</h4><button>(A,B)</button><button>(−B,A)</button><button>(A,C)</button><button>(B,C)</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="3"><h4>5. La forma punto-pendiente utiliza:</h4><button>Dos ordenadas</button><button>Solo la pendiente</button><button>Solo el punto medio</button><button>Un punto y una pendiente</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="0"><h4>6. Una recta horizontal tiene pendiente:</h4><button>0</button><button>1</button><button>No definida</button><button>−1</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="2"><h4>7. Una recta vertical:</h4><button>Tiene pendiente 0</button><button>Tiene forma y=b</button><button>No tiene pendiente definida</button><button>Siempre pasa por el origen</button><p class="quiz-feedback"></p></div><div class="quiz-card" data-correct="1"><h4>8. La forma segmentaria usa:</h4><button>Un vector normal</button><button>Los cortes con los ejes</button><button>La distancia entre dos puntos</button><button>El producto mixto</button><p class="quiz-feedback"></p></div></div>
+        </section>
       </article>
 
       <article id="ga-sub3" class="module-panel">
@@ -1414,6 +1510,6 @@
 
   <footer><span>VectorLab · V6.1 Geometría Analítica</span><span>Autor: Ing. Mg. Agustín Menuet · FICA · UNSL · 2026</span><span>© 2026 Agustín Menuet. Material educativo. Uso académico citando la fuente.</span></footer>
 
-  <script src="app.js?v=6.2"></script>
+  <script src="app.js?v=6.3"></script>
 </body>
 </html>
