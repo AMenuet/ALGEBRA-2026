@@ -113,3 +113,17 @@ Se completó la subsección **Rectas en el plano**:
 - pestaña independiente de visualización;
 - 8 actividades con pistas y resolución;
 - 8 preguntas de autoevaluación.
+
+## V6.4 · Rectas en el plano · Visualizaciones ampliadas
+
+Se reemplazó la visualización simple de la subsección Rectas en el plano por una grilla interactiva con 10 tarjetas:
+1. forma punto-pendiente;
+2. forma pendiente-ordenada;
+3. forma dos puntos;
+4. forma segmentaria;
+5. forma normal;
+6. forma general;
+7. vector director;
+8. vector normal;
+9. recta vertical;
+10. recta horizontal.

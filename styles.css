@@ -750,3 +750,19 @@ footer {
 .ga-svg .svg-label { font-family: "Cambria Math", Georgia, serif; font-weight: 800; font-size: 24px; }
 .ga-svg .svg-small { font-family: "Cambria Math", Georgia, serif; font-size: 18px; }
 .theory-card ul { margin: .4rem 0 0 1.1rem; color: var(--muted); line-height: 1.5; }
+
+
+/* V6.4: visualizaciones ampliadas de rectas */
+.rectas-visual-frame {
+  width: 100%;
+  min-height: 2250px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fbfdff;
+}
+
+@media (max-width: 900px) {
+  .rectas-visual-frame {
+    min-height: 4050px;
+  }
+}

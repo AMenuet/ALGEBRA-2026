@@ -6,7 +6,7 @@
   <title>VectorLab · Unidad 1: Vectores</title>
   <meta name="description" content="Manual interactivo de vectores para Álgebra y Geometría Analítica." />
   <meta name="author" content="Ing. Mg. Agustín Menuet · FICA · Universidad Nacional de San Luis" />
-  <link rel="stylesheet" href="styles.css?v=6.3" />
+  <link rel="stylesheet" href="styles.css?v=6.4" />
 </head>
 <body>
   <header class="hero">
@@ -17,8 +17,8 @@
     </div>
     <div class="status-card">
       <span>Versión</span>
-      <strong>V6.3 · Geometría Analítica</strong>
-      <small>Etapa 2 · Rectas en el plano</small>
+      <strong>V6.4 · Geometría Analítica</strong>
+      <small>Rectas · visualizaciones ampliadas</small>
     </div>
   </header>
 
@@ -1335,54 +1335,12 @@
           <div class="theory-grid"><div class="theory-card"><h3>1. Concepto de recta en el plano</h3><p>Una recta puede interpretarse como el conjunto de puntos del plano que satisfacen una misma condición lineal. Desde el punto de vista analítico, una recta se representa mediante ecuaciones equivalentes que resaltan distintos aspectos geométricos.</p></div><div class="theory-card"><h3>2. Pendiente de una recta</h3><p>La pendiente mide la inclinación de una recta respecto del eje x. Si una recta pasa por P₁(x₁,y₁) y P₂(x₂,y₂), con x₂ distinto de x₁, entonces:</p><div class="formula">m = (y₂ − y₁)/(x₂ − x₁)</div></div><div class="theory-card"><h3>3. Interpretación de la pendiente</h3><p>La pendiente representa la razón entre la variación vertical y la variación horizontal. Si m es positiva, la recta crece; si m es negativa, la recta decrece; si m=0, la recta es horizontal.</p><div class="formula">m = Δy/Δx</div></div><div class="theory-card"><h3>4. Forma punto-pendiente</h3><p>Si se conoce un punto P₀(x₀,y₀) de la recta y su pendiente m, la ecuación puede escribirse como:</p><div class="formula">y − y₀ = m(x − x₀)</div></div><div class="theory-card"><h3>5. Forma pendiente-ordenada</h3><p>Si se conoce la pendiente m y la ordenada al origen b, se utiliza la forma explícita:</p><div class="formula">y = mx + b</div></div><div class="theory-card"><h3>6. Recta que pasa por dos puntos</h3><p>Cuando se conocen dos puntos P₁ y P₂, primero se calcula la pendiente y luego se escribe la ecuación usando forma punto-pendiente.</p><div class="formula">m = (y₂ − y₁)/(x₂ − x₁)</div></div><div class="theory-card"><h3>7. Forma general</h3><p>Toda recta del plano puede expresarse en la forma general. Esta forma es útil para trabajar distancias, paralelismo y perpendicularidad.</p><div class="formula">Ax + By + C = 0</div></div><div class="theory-card"><h3>8. Vector normal</h3><p>En la forma general Ax+By+C=0, el vector n=(A,B) es perpendicular a la recta. Este vector indica una dirección normal a todos los vectores directores de la recta.</p><div class="formula">n = (A,B)</div></div><div class="theory-card"><h3>9. Vector director</h3><p>Un vector director es un vector paralelo a la recta. Si la recta tiene normal n=(A,B), un posible vector director es:</p><div class="formula">v = (−B,A)</div></div><div class="theory-card"><h3>10. Forma segmentaria</h3><p>Si una recta corta al eje x en a y al eje y en b, con a y b no nulos, puede escribirse como:</p><div class="formula">x/a + y/b = 1</div></div><div class="theory-card"><h3>11. Forma normal</h3><p>Si d es la distancia del origen a la recta y α es el ángulo que forma la normal con el eje x, la forma normal es:</p><div class="formula">x cos(α) + y sin(α) − d = 0</div></div><div class="theory-card"><h3>12. Errores frecuentes</h3><p>Al trabajar rectas es común confundir pendiente con ordenada al origen, olvidar que las rectas verticales no tienen pendiente definida o no reconocer que distintas formas pueden representar la misma recta.</p></div></div>
         </section>
 
+        
         <section id="ga2-visual" class="panel">
-          <div class="section-note">
-            <h3>Visualización conceptual</h3>
-            <p>La pendiente se interpreta como la razón entre la variación vertical y la variación horizontal.</p>
-          </div>
-
-          <div class="graph-card">
-            <div class="graph-header">
-              <div>
-                <h4>Recta por dos puntos</h4>
-                <p>La recta queda determinada por P₁ y P₂. La pendiente es m = Δy/Δx.</p>
-              </div>
-              <div class="live-values">
-                <span>Δx = x₂ − x₁</span>
-                <span>Δy = y₂ − y₁</span>
-                <span>m = Δy/Δx</span>
-              </div>
-            </div>
-
-            <svg class="ga-svg" viewBox="0 0 720 380" role="img" aria-label="Pendiente de una recta">
-              <defs>
-                <marker id="gaArrowV63" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
-                  <path d="M0,0 L0,6 L7,3 z" fill="#0b5cad"></path>
-                </marker>
-              </defs>
-              <rect width="720" height="380" fill="#fbfdff"/>
-              <g stroke="#e5eef9" stroke-width="1">
-                <path d="M60 320H660M60 280H660M60 240H660M60 200H660M60 160H660M60 120H660M60 80H660M60 40H660"/>
-                <path d="M100 40V340M140 40V340M180 40V340M220 40V340M260 40V340M300 40V340M340 40V340M380 40V340M420 40V340M460 40V340M500 40V340M540 40V340M580 40V340M620 40V340"/>
-              </g>
-              <line x1="60" y1="320" x2="670" y2="320" stroke="#111" stroke-width="2" marker-end="url(#gaArrowV63)"/>
-              <line x1="100" y1="340" x2="100" y2="35" stroke="#111" stroke-width="2" marker-end="url(#gaArrowV63)"/>
-
-              <line x1="135" y1="295" x2="620" y2="70" stroke="#0b5cad" stroke-width="5"/>
-              <circle cx="220" cy="255" r="7" fill="#0b5cad"/>
-              <circle cx="500" cy="125" r="7" fill="#0b5cad"/>
-              <line x1="220" y1="255" x2="500" y2="255" stroke="#b45309" stroke-width="4" stroke-dasharray="8 6"/>
-              <line x1="500" y1="255" x2="500" y2="125" stroke="#b45309" stroke-width="4" stroke-dasharray="8 6"/>
-              <text x="195" y="280" class="svg-small">P₁</text>
-              <text x="510" y="120" class="svg-small">P₂</text>
-              <text x="350" y="245" class="svg-small">Δx</text>
-              <text x="512" y="195" class="svg-small">Δy</text>
-              <text x="335" y="170" class="svg-label" fill="#0b5cad">m = Δy/Δx</text>
-            </svg>
-          </div>
+          <iframe class="rectas-visual-frame" src="rectas_visual_embed.html" title="Visualizaciones interactivas de rectas en el plano"></iframe>
         </section>
 
-        <section id="ga2-activities" class="panel">
+<section id="ga2-activities" class="panel">
           <div class="section-note">
             <h3>Actividades guiadas</h3>
             <p>Resolver en carpeta y usar la verificación para controlar el resultado final.</p>
@@ -1510,6 +1468,6 @@
 
   <footer><span>VectorLab · V6.1 Geometría Analítica</span><span>Autor: Ing. Mg. Agustín Menuet · FICA · UNSL · 2026</span><span>© 2026 Agustín Menuet. Material educativo. Uso académico citando la fuente.</span></footer>
 
-  <script src="app.js?v=6.3"></script>
+  <script src="app.js?v=6.4"></script>
 </body>
 </html>
