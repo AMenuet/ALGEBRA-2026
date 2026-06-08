@@ -134,3 +134,15 @@ Se ajustó la visualización de Rectas en el plano:
 - grillas con escala x/y igual;
 - tarjetas en formato tablero amplio;
 - visualización consolidada antes de avanzar a Distancias y ángulos.
+
+## V6.5 · Geometría Analítica completa
+
+Se completaron las subsecciones:
+- Distancias y ángulos
+- Rectas y planos en el espacio
+
+Cada una incluye:
+- teoría ampliada;
+- visualización conceptual;
+- 8 actividades;
+- 8 preguntas de autoevaluación.
